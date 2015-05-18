@@ -16,8 +16,11 @@ var UIEngine = {
 		txtMsg: ''
 	},
 	validation: function(){
+		var errorFlag;
+
 		this.getValues();
-		return false; //form valid allow submit
+		errorFlag = this.checkProductComplaint();
+		return errorFlag; //form valid allow submit
 	},
 	getValues: function(){
 		var Engine = this;
@@ -30,5 +33,15 @@ var UIEngine = {
 	},
 	getElementValue: function(element){
 		return document.getElementById(element).value;
+	},
+	checkProductComplaint: function(){
+		var Engine = this;
+		if(Engine.formData.cmbEnquiry === 'Product complaint'){
+			if(Engine.formData.txtPname == '' || 
+				Engine.formData.txtPsize == '' ||
+				Engine.formData.txtPuseBy == '' ||
+				Engine.formData.txtPbcode == '') return false;
+			else return true;
+		}
 	}
 }
