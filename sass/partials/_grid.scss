@@ -3,11 +3,19 @@
 -------------------------------------------------*/
 .row{
 	@include box-sizing(border-box);
-	clear:both;
+}
+.row:before,
+.row:after {
+    content: " "; /* 1 */
+    display: table;
+}
+
+.row:after {
+    clear: both;
 }
 [class^='col-'],[class*=' col-']{
 	@include box-sizing(border-box);
-	padding: 0 20px;
+	padding: 0 10px;
 	width: 100%;
 	float: left;
 }
