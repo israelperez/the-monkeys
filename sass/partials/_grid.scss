@@ -1,0 +1,18 @@
+/*-------------------------------------------------
+					Grid
+-------------------------------------------------*/
+.row{
+	@include box-sizing(border-box);
+	clear:both;
+}
+[class^='col-'],[class*=' col-']{
+	@include box-sizing(border-box);
+	padding: 0 20px;
+	width: 100%;
+	float: left;
+}
+@media (min-width: 495px){
+	.col-6{
+		width: 50%;
+	}
+}
