@@ -32,7 +32,7 @@ var UIEngine = {
 		console.log(Engine.formData);
 	},
 	getElementValue: function(element){
-		return document.getElementById(element).value;
+		return document.getElementById(element).value.trim();
 	},
 	checkProductComplaint: function(){
 		var Engine = this;
