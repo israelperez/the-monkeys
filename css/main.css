@@ -735,7 +735,7 @@ textarea {
   float: left;
 }
 
-@media (min-width: 495px) {
+@media (min-width: 490px) {
   /* line 23, ../sass/partials/_grid.scss */
   .col-6 {
     width: 50%;
@@ -753,32 +753,45 @@ textarea {
 /* line 20, ../sass/partials/_media-min-320.scss */
 body {
   font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #555;
 }
 
 /* line 26, ../sass/partials/_media-min-320.scss */
+form h1 {
+  text-align: center;
+  font-size: 25px;
+}
+/* line 29, ../sass/partials/_media-min-320.scss */
+form h1 span {
+  display: block;
+  font-size: 40px;
+}
+
+/* line 34, ../sass/partials/_media-min-320.scss */
 .form-element {
   margin-bottom: 20px;
 }
 
-/* line 29, ../sass/partials/_media-min-320.scss */
+/* line 37, ../sass/partials/_media-min-320.scss */
 .form-label {
-  text-align: right;
+  padding-right: 30px;
 }
 
-/* line 32, ../sass/partials/_media-min-320.scss */
+/* line 40, ../sass/partials/_media-min-320.scss */
 .form-spacer {
   height: 30px;
   clear: both;
 }
 
-/* line 37, ../sass/partials/_media-min-320.scss */
-input[type=text], textarea {
+/* line 45, ../sass/partials/_media-min-320.scss */
+input[type=text], input[type=tel], input[type=number], textarea {
   -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
   border: none;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 10px;
   background-color: #fafafa;
@@ -786,7 +799,40 @@ input[type=text], textarea {
   width: calc(100% - 20px);
 }
 
-/* line 46, ../sass/partials/_media-min-320.scss */
+/* line 54, ../sass/partials/_media-min-320.scss */
 select {
   width: 100%;
+  margin: 10px 0;
+}
+
+/* line 58, ../sass/partials/_media-min-320.scss */
+input[type=submit] {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuMCIgeDI9IjEuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzM0OThkYiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzFmNjI4ZCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #3498db), color-stop(100%, #1f628d));
+  background-image: -moz-linear-gradient(top, #3498db, #1f628d);
+  background-image: -webkit-linear-gradient(top, #3498db, #1f628d);
+  background-image: linear-gradient(to bottom right, #3498db, #1f628d);
+  border: solid #1f628d 1px;
+  padding: 10px;
+  color: #fff;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  float: right;
+  text-transform: uppercase;
+}
+
+@media (min-width: 490px) {
+  /* line 2, ../sass/partials/_media-min-490.scss */
+  form {
+    max-width: 550px;
+    margin: 0 auto;
+  }
+
+  /* line 6, ../sass/partials/_media-min-490.scss */
+  .form-label {
+    padding: 10px 0;
+    text-align: right;
+  }
 }

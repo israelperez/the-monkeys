@@ -20,40 +20,40 @@
 
         <!-- Add your site or application content here -->
         <div class="content">
-            <form>
+            <form method="GET">
                 <heaeder class="row">
                     <h1 class="col-12">The Monkeys <span>Technical Compatibility Test</span></h1>
                 </heaeder>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        First name
+                        First name *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtFname" type="text" required>
                     </div>
                 </div>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Surname name
+                        Surname name *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtSname" type="text" required>
                     </div>
                 </div>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Email address
+                        Email address *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtEamil" type="text" required>
                     </div>
                 </div>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Daytime contact number
+                        Daytime contact number *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtPhone" type="tel" required>
                     </div>
                 </div>
                 
@@ -61,26 +61,26 @@
                 
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Address
+                        Address *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtAddress" type="text" required>
                     </div>
                 </div>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Suburb
+                        Suburb *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtSuburb" type="text" required>
                     </div>
                 </div>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        State
+                        State *
                     </div>
                     <div class="col-6">
-                        <select>
+                        <select id="cmbState">
                             <option>ACT</option>
                             <option selected>NSW</option>
                             <option>NT</option>
@@ -94,10 +94,10 @@
                 </div>
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Postcode
+                        Postcode *
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtPcode" type="number" required>
                     </div>
                 </div>
 
@@ -105,11 +105,11 @@
 
                 <div class="row form-element">
                     <div class="col-6 form-label">
-                        Enquiry type
+                        Enquiry type *
                     </div>
                     <div class="col-6">
-                        <select>
-                            <option>General enquiry</option>
+                        <select id="cmbEnquiry">
+                            <option selected>General enquiry</option>
                             <option>Product feedback or enquiry</option>
                             <option>Product complaint</option>
                         </select>
@@ -120,7 +120,7 @@
                         Product name
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtPname" type="text">
                     </div>
                 </div>
                 <div class="row form-element">
@@ -128,7 +128,7 @@
                         Product size
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtPsize" type="text">
                     </div>
                 </div>
                 <div class="row form-element">
@@ -136,7 +136,7 @@
                         Use-by date
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtPuseBy" type="text">
                     </div>
                 </div>
                 <div class="row form-element">
@@ -144,7 +144,7 @@
                         Batch code
                     </div>
                     <div class="col-6">
-                        <input type="text">
+                        <input id="txtPbcode" type="text">
                     </div>
                 </div>
                 <div class="row form-element">
@@ -152,7 +152,7 @@
                         Enquiry
                     </div>
                     <div class="col-6">
-                        <textarea></textarea>
+                        <textarea id="txtMsg"></textarea>
                     </div>
                 </div>
                 <div class="row form-element">
