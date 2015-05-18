@@ -785,7 +785,7 @@ form h1 span {
 }
 
 /* line 45, ../sass/partials/_media-min-320.scss */
-input[type=text], input[type=tel], input[type=number], textarea {
+input[type=text], input[type=tel], input[type=email], input[type=number], textarea {
   -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
   -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25) inset;
